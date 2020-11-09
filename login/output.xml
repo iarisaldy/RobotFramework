@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201022 12:15:13.547" rpa="false">
+<suite id="s1" name="Login" source="C:\Users\iaris\Documents\idn_media\login\login.robot">
+<test id="s1-t1" name="Case 1 login fail with username and password empty">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201022 12:15:13.966" level="INFO">Opening browser 'chrome' to base url 'https://community.idntimes.com/'.</msg>
+<status status="PASS" starttime="20201022 12:15:13.965" endtime="20201022 12:15:28.356"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201022 12:15:28.357" endtime="20201022 12:15:30.482"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20201022 12:15:30.484" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20201022 12:15:30.483" endtime="20201022 12:15:30.699"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20201022 12:15:40.701" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201022 12:15:30.700" endtime="20201022 12:15:40.701"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/media/senju/Data Kantor/python/idn_media/screenshot/LoginError1.png</arg>
+</arguments>
+<msg timestamp="20201022 12:15:41.521" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/LoginError1.png"&gt;&lt;img src="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/LoginError1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 12:15:40.702" endtime="20201022 12:15:41.521"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201022 12:15:41.522" endtime="20201022 12:15:43.814"></status>
+</kw>
+<status status="PASS" starttime="20201022 12:15:13.963" endtime="20201022 12:15:43.815" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Case 2 login fail with wrong username and password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201022 12:15:43.824" level="INFO">Opening browser 'chrome' to base url 'https://community.idntimes.com/'.</msg>
+<status status="PASS" starttime="20201022 12:15:43.823" endtime="20201022 12:16:57.489"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201022 12:16:57.490" endtime="20201022 12:16:59.616"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20201022 12:16:59.619" level="INFO">Typing text 'gallan.widyanto@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20201022 12:16:59.618" endtime="20201022 12:16:59.841"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20201022 12:16:59.844" level="INFO">Typing text '123456aB' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20201022 12:16:59.843" endtime="20201022 12:17:00.047"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/media/senju/Data Kantor/python/idn_media/screenshot/Login_Abnormal_1.png</arg>
+</arguments>
+<msg timestamp="20201022 12:17:01.094" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/Login_Abnormal_1.png"&gt;&lt;img src="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/Login_Abnormal_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 12:17:00.048" endtime="20201022 12:17:01.095"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20201022 12:17:01.099" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20201022 12:17:01.099" endtime="20201022 12:17:01.257"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20201022 12:17:11.260" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201022 12:17:01.259" endtime="20201022 12:17:11.260"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/media/senju/Data Kantor/python/idn_media/screenshot/LoginError2.png</arg>
+</arguments>
+<msg timestamp="20201022 12:17:38.373" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/LoginError2.png"&gt;&lt;img src="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/LoginError2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 12:17:11.261" endtime="20201022 12:17:38.373"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201022 12:17:38.374" endtime="20201022 12:17:40.742"></status>
+</kw>
+<status status="PASS" starttime="20201022 12:15:43.822" endtime="20201022 12:17:40.743" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Case 3 login success with username and password correct">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201022 12:17:40.753" level="INFO">Opening browser 'chrome' to base url 'https://community.idntimes.com/'.</msg>
+<status status="PASS" starttime="20201022 12:17:40.752" endtime="20201022 12:19:10.167"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201022 12:19:10.168" endtime="20201022 12:19:12.304"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20201022 12:19:12.307" level="INFO">Typing text 'gallan.widyanto@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20201022 12:19:12.306" endtime="20201022 12:19:12.521"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20201022 12:19:12.523" level="INFO">Typing text '123456aB' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20201022 12:19:12.522" endtime="20201022 12:19:12.707"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png</arg>
+</arguments>
+<msg timestamp="20201022 12:19:13.668" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/Login_Normal.png"&gt;&lt;img src="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/Login_Normal.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 12:19:12.708" endtime="20201022 12:19:13.669"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20201022 12:19:13.670" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20201022 12:19:13.670" endtime="20201022 12:19:13.828"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20201022 12:19:23.832" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201022 12:19:13.831" endtime="20201022 12:19:23.832"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png</arg>
+</arguments>
+<msg timestamp="20201022 12:19:35.693" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/LoginSuccess.png"&gt;&lt;img src="../../../../../media/senju/Data%20Kantor/python/idn_media/screenshot/LoginSuccess.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201022 12:19:23.833" endtime="20201022 12:19:35.693"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201022 12:19:35.694" endtime="20201022 12:19:38.044"></status>
+</kw>
+<status status="PASS" starttime="20201022 12:17:40.751" endtime="20201022 12:19:38.046" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201022 12:15:13.547" endtime="20201022 12:19:38.054"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
