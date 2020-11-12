@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201109 10:33:20.775" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201112 10:43:20.178" rpa="false">
 <suite id="s1" name="Create" source="C:\Users\iaris\Documents\idn_media\idntimes\create.robot">
-<test id="s1-t1" name="Case 1 login Email success with username and password correct">
+<test id="s1-t1" name="Case 7 Create full artikel to draft and preview">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201109 10:33:21.564" level="INFO">Opening browser 'chrome' to base url 'https://community.idntimes.com/'.</msg>
-<status status="PASS" starttime="20201109 10:33:21.564" endtime="20201109 10:33:28.417"></status>
+<msg timestamp="20201112 10:43:20.623" level="INFO">Opening browser 'chrome' to base url 'https://community.idntimes.com/'.</msg>
+<status status="PASS" starttime="20201112 10:43:20.621" endtime="20201112 10:43:27.506"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201109 10:33:28.418" endtime="20201109 10:33:30.607"></status>
+<status status="PASS" starttime="20201112 10:43:27.507" endtime="20201112 10:43:29.641"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -21,8 +21,8 @@
 <arg>name:email</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20201109 10:33:30.609" level="INFO">Typing text 'alam.baka.99@yahoo.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20201109 10:33:30.608" endtime="20201109 10:33:30.884"></status>
+<msg timestamp="20201112 10:43:29.643" level="INFO">Typing text 'alam.baka.99@yahoo.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20201112 10:43:29.642" endtime="20201112 10:43:29.879"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -30,48 +30,559 @@
 <arg>name:password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20201109 10:33:30.887" level="INFO">Typing text 'okeokeoke' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20201109 10:33:30.887" endtime="20201109 10:33:31.237"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<arguments>
-<arg>iaris/Documents/idn_media/screenshot/Login.png</arg>
-</arguments>
-<msg timestamp="20201109 10:33:31.935" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="iaris/Documents/idn_media/screenshot/Login.png"&gt;&lt;img src="iaris/Documents/idn_media/screenshot/Login.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201109 10:33:31.239" endtime="20201109 10:33:31.935"></status>
+<msg timestamp="20201112 10:43:29.881" level="INFO">Typing text 'okeokeoke' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20201112 10:43:29.880" endtime="20201112 10:43:30.123"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>Sign In</arg>
 </arguments>
-<msg timestamp="20201109 10:33:31.949" level="INFO">Clicking button 'Sign In'.</msg>
-<status status="PASS" starttime="20201109 10:33:31.949" endtime="20201109 10:33:32.140"></status>
+<msg timestamp="20201112 10:43:30.125" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20201112 10:43:30.125" endtime="20201112 10:43:57.562"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20201112 10:44:12.564" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20201112 10:43:57.563" endtime="20201112 10:44:12.564"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//i[@class="idn-mini-icon idn-write"]</arg>
+</arguments>
+<msg timestamp="20201112 10:44:12.565" level="INFO">Clicking element 'xpath=//i[@class="idn-mini-icon idn-write"]'.</msg>
+<status status="PASS" starttime="20201112 10:44:12.565" endtime="20201112 10:44:15.745"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20201112 10:44:25.748" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:15.746" endtime="20201112 10:44:25.748"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//label[@class="app__tab-label___369hK"]</arg>
+</arguments>
+<msg timestamp="20201112 10:44:25.750" level="INFO">Clicking element 'xpath=//label[@class="app__tab-label___369hK"]'.</msg>
+<status status="PASS" starttime="20201112 10:44:25.749" endtime="20201112 10:44:25.856"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20201109 10:33:37.151" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20201109 10:33:32.150" endtime="20201109 10:33:37.151"></status>
+<msg timestamp="20201112 10:44:30.858" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:25.857" endtime="20201112 10:44:30.858"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p</arg>
+</arguments>
+<msg timestamp="20201112 10:44:30.859" level="INFO">Clicking element 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p'.</msg>
+<status status="PASS" starttime="20201112 10:44:30.859" endtime="20201112 10:44:30.968"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:44:35.970" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:30.969" endtime="20201112 10:44:35.970"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
-<arg>/Users/iaris/Documents/idn_media/screenshot/LoginEmailSuccess.png</arg>
+<arg>/Users/iaris/Documents/idn_media/screenshot/PilihTopic.png</arg>
 </arguments>
-<msg timestamp="20201109 10:33:44.371" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/LoginEmailSuccess.png"&gt;&lt;img src="../screenshot/LoginEmailSuccess.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201109 10:33:37.152" endtime="20201109 10:33:44.372"></status>
+<msg timestamp="20201112 10:44:36.386" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/PilihTopic.png"&gt;&lt;img src="../screenshot/PilihTopic.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:44:35.971" endtime="20201112 10:44:36.386"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1</arg>
+<arg>robot</arg>
+</arguments>
+<msg timestamp="20201112 10:44:36.388" level="INFO">Typing text 'robot' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1'.</msg>
+<status status="PASS" starttime="20201112 10:44:36.387" endtime="20201112 10:44:36.639"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiJudul.png</arg>
+</arguments>
+<msg timestamp="20201112 10:44:37.066" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiJudul.png"&gt;&lt;img src="../screenshot/IsiJudul.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:44:36.640" endtime="20201112 10:44:37.067"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:44:42.069" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:37.068" endtime="20201112 10:44:42.069"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[3]/div/div/div/div/p</arg>
+<arg>framework</arg>
+</arguments>
+<msg timestamp="20201112 10:44:42.070" level="INFO">Typing text 'framework' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[3]/div/div/div/div/p'.</msg>
+<status status="PASS" starttime="20201112 10:44:42.070" endtime="20201112 10:44:42.315"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiCuplikan.png</arg>
+</arguments>
+<msg timestamp="20201112 10:44:42.729" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiCuplikan.png"&gt;&lt;img src="../screenshot/IsiCuplikan.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:44:42.317" endtime="20201112 10:44:42.729"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:44:47.733" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:42.730" endtime="20201112 10:44:47.733"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>Sisipkan Gambar</arg>
+</arguments>
+<msg timestamp="20201112 10:44:47.735" level="INFO">Clicking button 'Sisipkan Gambar'.</msg>
+<status status="PASS" starttime="20201112 10:44:47.735" endtime="20201112 10:44:47.983"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/PopupSisipkanGambar.png</arg>
+</arguments>
+<msg timestamp="20201112 10:44:48.549" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/PopupSisipkanGambar.png"&gt;&lt;img src="../screenshot/PopupSisipkanGambar.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:44:47.992" endtime="20201112 10:44:48.549"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20201112 10:44:58.550" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:48.550" endtime="20201112 10:44:58.550"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="delete-image"]/div[1]/div/img</arg>
+</arguments>
+<msg timestamp="20201112 10:44:58.552" level="INFO">Clicking element 'xpath=//*[@id="delete-image"]/div[1]/div/img'.</msg>
+<status status="PASS" starttime="20201112 10:44:58.551" endtime="20201112 10:44:58.752"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/BerhasilSisipkanGambar.png</arg>
+</arguments>
+<msg timestamp="20201112 10:44:59.119" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/BerhasilSisipkanGambar.png"&gt;&lt;img src="../screenshot/BerhasilSisipkanGambar.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:44:58.754" endtime="20201112 10:44:59.119"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:04.122" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:44:59.120" endtime="20201112 10:45:04.122"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath=//div[@class='mce-edit-area mce-container mce-panel mce-stack-layout-item']/iframe</arg>
+</arguments>
+<msg timestamp="20201112 10:45:04.124" level="INFO">Selecting frame 'xpath=//div[@class='mce-edit-area mce-container mce-panel mce-stack-layout-item']/iframe'.</msg>
+<status status="PASS" starttime="20201112 10:45:04.123" endtime="20201112 10:45:04.184"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="tinymce"]/p</arg>
+<arg>coba dengan senyuman</arg>
+</arguments>
+<msg timestamp="20201112 10:45:04.185" level="INFO">Typing text 'coba dengan senyuman' into text field 'xpath=//*[@id="tinymce"]/p'.</msg>
+<status status="PASS" starttime="20201112 10:45:04.185" endtime="20201112 10:45:04.635"></status>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20201112 10:45:04.636" endtime="20201112 10:45:04.643"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiDiskripsi.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:05.104" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiDiskripsi.png"&gt;&lt;img src="../screenshot/IsiDiskripsi.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:04.644" endtime="20201112 10:45:05.104"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:10.108" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:05.105" endtime="20201112 10:45:10.108"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[6]/div/div/div/h2</arg>
+<arg>sub judul section 1 robot</arg>
+</arguments>
+<msg timestamp="20201112 10:45:10.110" level="INFO">Typing text 'sub judul section 1 robot' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[6]/div/div/div/h2'.</msg>
+<status status="PASS" starttime="20201112 10:45:10.109" endtime="20201112 10:45:10.471"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiSubjudul1.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:10.795" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiSubjudul1.png"&gt;&lt;img src="../screenshot/IsiSubjudul1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:10.472" endtime="20201112 10:45:10.795"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:15.799" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:10.796" endtime="20201112 10:45:15.799"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/div/div[2]</arg>
+</arguments>
+<msg timestamp="20201112 10:45:15.801" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/div/div[2]'.</msg>
+<status status="PASS" starttime="20201112 10:45:15.800" endtime="20201112 10:45:16.088"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//i[@class="fab fa-facebook-f"]</arg>
+</arguments>
+<msg timestamp="20201112 10:45:16.089" level="INFO">Clicking element 'xpath=//i[@class="fab fa-facebook-f"]'.</msg>
+<status status="PASS" starttime="20201112 10:45:16.089" endtime="20201112 10:45:16.215"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/input</arg>
+<arg>https://www.facebook.com/KementerianKesehatanRI/photos/a.1021894937840606/3953434788019925/</arg>
+</arguments>
+<msg timestamp="20201112 10:45:16.217" level="INFO">Typing text 'https://www.facebook.com/KementerianKesehatanRI/photos/a.1021894937840606/3953434788019925/' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/input'.</msg>
+<status status="PASS" starttime="20201112 10:45:16.216" endtime="20201112 10:45:17.073"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiEmbedFB.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:17.410" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiEmbedFB.png"&gt;&lt;img src="../screenshot/IsiEmbedFB.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:17.074" endtime="20201112 10:45:17.410"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:22.412" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:17.411" endtime="20201112 10:45:22.412"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[9]/div/div/div/h2</arg>
+<arg>sub judul section 2 robot</arg>
+</arguments>
+<msg timestamp="20201112 10:45:22.414" level="INFO">Typing text 'sub judul section 2 robot' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[9]/div/div/div/h2'.</msg>
+<status status="PASS" starttime="20201112 10:45:22.413" endtime="20201112 10:45:22.743"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiSubjudul2.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:23.071" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiSubjudul2.png"&gt;&lt;img src="../screenshot/IsiSubjudul2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:22.744" endtime="20201112 10:45:23.071"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:28.073" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:23.072" endtime="20201112 10:45:28.073"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/div/div[2]</arg>
+</arguments>
+<msg timestamp="20201112 10:45:28.074" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/div/div[2]'.</msg>
+<status status="PASS" starttime="20201112 10:45:28.074" endtime="20201112 10:45:28.360"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//i[@class="fab fa-instagram"]</arg>
+</arguments>
+<msg timestamp="20201112 10:45:28.361" level="INFO">Clicking element 'xpath=//i[@class="fab fa-instagram"]'.</msg>
+<status status="PASS" starttime="20201112 10:45:28.360" endtime="20201112 10:45:28.483"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/input</arg>
+<arg>https://www.instagram.com/p/CHeY6l4jLkx/?utm_source=ig_web_button_share_sheet</arg>
+</arguments>
+<msg timestamp="20201112 10:45:28.485" level="INFO">Typing text 'https://www.instagram.com/p/CHeY6l4jLkx/?utm_source=ig_web_button_share_sheet' into text field '//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/input'.</msg>
+<status status="PASS" starttime="20201112 10:45:28.484" endtime="20201112 10:45:29.157"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiEmbedIG.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:29.486" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiEmbedIG.png"&gt;&lt;img src="../screenshot/IsiEmbedIG.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:29.158" endtime="20201112 10:45:29.486"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:34.489" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:29.487" endtime="20201112 10:45:34.489"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[12]/div/div/div/h2</arg>
+<arg>sub judul section 3 robot</arg>
+</arguments>
+<msg timestamp="20201112 10:45:34.490" level="INFO">Typing text 'sub judul section 3 robot' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[12]/div/div/div/h2'.</msg>
+<status status="PASS" starttime="20201112 10:45:34.490" endtime="20201112 10:45:34.810"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiSubjudul3.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:35.137" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiSubjudul3.png"&gt;&lt;img src="../screenshot/IsiSubjudul3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:34.811" endtime="20201112 10:45:35.137"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:40.139" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:35.138" endtime="20201112 10:45:40.139"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/div/div[2]</arg>
+</arguments>
+<msg timestamp="20201112 10:45:40.140" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/div/div[2]'.</msg>
+<status status="PASS" starttime="20201112 10:45:40.140" endtime="20201112 10:45:40.426"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//i[@class="fab fa-twitter"]</arg>
+</arguments>
+<msg timestamp="20201112 10:45:40.427" level="INFO">Clicking element 'xpath=//i[@class="fab fa-twitter"]'.</msg>
+<status status="PASS" starttime="20201112 10:45:40.427" endtime="20201112 10:45:40.540"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/input</arg>
+<arg>https://twitter.com/e100ss/status/1326491523471470593?s=20</arg>
+</arguments>
+<msg timestamp="20201112 10:45:40.541" level="INFO">Typing text 'https://twitter.com/e100ss/status/1326491523471470593?s=20' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/input'.</msg>
+<status status="PASS" starttime="20201112 10:45:40.540" endtime="20201112 10:45:41.113"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiEmbedTwitter.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:41.577" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiEmbedTwitter.png"&gt;&lt;img src="../screenshot/IsiEmbedTwitter.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:41.114" endtime="20201112 10:45:41.578"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:46.581" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:41.579" endtime="20201112 10:45:46.581"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[2]/button</arg>
+</arguments>
+<msg timestamp="20201112 10:45:46.583" level="INFO">Clicking button 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[2]/button'.</msg>
+<status status="PASS" starttime="20201112 10:45:46.582" endtime="20201112 10:45:46.736"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/TambahSection.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:47.137" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/TambahSection.png"&gt;&lt;img src="../screenshot/TambahSection.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:46.737" endtime="20201112 10:45:47.137"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20201112 10:45:57.139" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:47.139" endtime="20201112 10:45:57.139"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[15]/div/div/div/h2</arg>
+<arg>sub judul section 4 robot</arg>
+</arguments>
+<msg timestamp="20201112 10:45:57.141" level="INFO">Typing text 'sub judul section 4 robot' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[15]/div/div/div/h2'.</msg>
+<status status="PASS" starttime="20201112 10:45:57.140" endtime="20201112 10:45:57.489"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiSubjudul4.png</arg>
+</arguments>
+<msg timestamp="20201112 10:45:57.813" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiSubjudul4.png"&gt;&lt;img src="../screenshot/IsiSubjudul4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:45:57.490" endtime="20201112 10:45:57.813"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:46:02.815" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:45:57.814" endtime="20201112 10:46:02.815"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/div/div[2]</arg>
+</arguments>
+<msg timestamp="20201112 10:46:02.816" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/div/div[2]'.</msg>
+<status status="PASS" starttime="20201112 10:46:02.816" endtime="20201112 10:46:03.109"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//i[@class="fab fa-youtube"]</arg>
+</arguments>
+<msg timestamp="20201112 10:46:03.110" level="INFO">Clicking element 'xpath=//i[@class="fab fa-youtube"]'.</msg>
+<status status="PASS" starttime="20201112 10:46:03.110" endtime="20201112 10:46:03.245"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/input</arg>
+<arg>https://www.youtube.com/watch?v=Q9U2rBtp7qk</arg>
+</arguments>
+<msg timestamp="20201112 10:46:03.247" level="INFO">Typing text 'https://www.youtube.com/watch?v=Q9U2rBtp7qk' into text field 'xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/input'.</msg>
+<status status="PASS" starttime="20201112 10:46:03.247" endtime="20201112 10:46:03.735"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/IsiEmbedYoutube.png</arg>
+</arguments>
+<msg timestamp="20201112 10:46:04.071" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/IsiEmbedYoutube.png"&gt;&lt;img src="../screenshot/IsiEmbedYoutube.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:46:03.737" endtime="20201112 10:46:04.071"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:46:09.073" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:46:04.072" endtime="20201112 10:46:09.073"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>Save as draft</arg>
+</arguments>
+<msg timestamp="20201112 10:46:09.075" level="INFO">Clicking button 'Save as draft'.</msg>
+<status status="PASS" starttime="20201112 10:46:09.074" endtime="20201112 10:46:09.217"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/SaveToDraft.png</arg>
+</arguments>
+<msg timestamp="20201112 10:46:09.771" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/SaveToDraft.png"&gt;&lt;img src="../screenshot/SaveToDraft.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:46:09.219" endtime="20201112 10:46:09.771"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:46:14.773" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:46:09.772" endtime="20201112 10:46:14.773"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@class="app__btn-action___2JQU-"]</arg>
+</arguments>
+<msg timestamp="20201112 10:46:14.775" level="INFO">Clicking element 'xpath=//a[@class="app__btn-action___2JQU-"]'.</msg>
+<status status="PASS" starttime="20201112 10:46:14.774" endtime="20201112 10:46:14.962"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>/Users/iaris/Documents/idn_media/screenshot/Preview.png</arg>
+</arguments>
+<msg timestamp="20201112 10:46:15.591" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshot/Preview.png"&gt;&lt;img src="../screenshot/Preview.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201112 10:46:14.963" endtime="20201112 10:46:15.591"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201112 10:46:20.594" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201112 10:46:15.592" endtime="20201112 10:46:20.594"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201109 10:33:44.373" endtime="20201109 10:33:48.154"></status>
+<status status="PASS" starttime="20201112 10:46:20.596" endtime="20201112 10:46:23.015"></status>
 </kw>
-<status status="PASS" starttime="20201109 10:33:21.562" endtime="20201109 10:33:48.156" critical="yes"></status>
+<status status="PASS" starttime="20201112 10:43:20.619" endtime="20201112 10:46:23.016" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201109 10:33:20.778" endtime="20201109 10:33:48.163"></status>
+<status status="PASS" starttime="20201112 10:43:20.181" endtime="20201112 10:46:23.025"></status>
 </suite>
 <statistics>
 <total>
