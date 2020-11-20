@@ -1,8 +1,12 @@
-# Automation Testing with Robot Framework (https://community.idntimes.com)
+# Automation Testing with Robot Framework
 
 ## What is it?
 Case study 1
-Create scenario testing and automated testing for IDN Times Community (https://community.idntimes.com)
+Create scenario testing and automated testing for IDN Times (https://www.idntimes.com)
+Case study 2
+Create scenario testing and automated testing for Popmama (soon)
+Case study 3
+Create scenario testing and automated testing for Popbela (soon)
 
 ## Installation
 
