@@ -1,12 +1,11 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ../init.robot
 
 *** Variables ***
+${url}    https://community.idntimes.com/
 ${browser}    chrome
-#${url}    https://community.idntimes.com/
-${email}    gallan.widyanto@gmail.com
-${password}    123456aB
+${email}    alam.baka.99@yahoo.com
+${password}    okeokeoke
 
 *** Test Cases ***
 Case 1 click menu hidup bersama corona
