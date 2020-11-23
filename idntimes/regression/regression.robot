@@ -14,7 +14,7 @@ Case 1 login Email success with username and password correct
     maximize browser window
     input text  name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    iaris/Documents/idn_media/screenshot/Login.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Login.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    5s
     capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/LoginEmailSuccess.png
