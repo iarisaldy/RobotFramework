@@ -13,7 +13,7 @@ Case 1 login fail with username and password empty
     maximize browser window
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/LoginError1.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/LoginError1.png
     close browser
 
 Case 2 login fail with wrong username and password
@@ -21,10 +21,10 @@ Case 2 login fail with wrong username and password
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    iaris/Documents/idn_media/screenshotLogin_Abnormal_1.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/screenshotLogin_Abnormal_1.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/LoginError2.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/screenshot/LoginError2.png
     close browser
 
 Case 3 login success with username and password correct
@@ -32,8 +32,8 @@ Case 3 login success with username and password correct
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    iaris/Documents/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/screenshot/LoginSuccess.png
     close browser
