@@ -784,14 +784,14 @@ Case 35 click menu about us
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
     sleep    10s
     click link    xpath=//a[@href="https://www.idntimes.com/about-us"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/AboutUs.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/AboutUs.png
     close browser
 
 Case 36 click menu career
@@ -799,14 +799,14 @@ Case 36 click menu career
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
     sleep    10s
     click link    xpath=//a[@href="https://www.idn.media/career#hire"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Career.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Career.png
     close browser
 
 Case 37 click menu privacy policy
@@ -814,14 +814,14 @@ Case 37 click menu privacy policy
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
     sleep    10s
     click link    xpath=//a[@href="https://www.idntimes.com/kebijakan-privasi"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/PrivacyPolicy.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PrivacyPolicy.png
     close browser
 
 Case 38 click menu pedoman media siber
@@ -829,14 +829,14 @@ Case 38 click menu pedoman media siber
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot   /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/LoginSuccess.png
+    capture page screenshot   /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
     sleep    10s
     click link    xpath=//a[@href="https://www.idntimes.com/pedoman-media-siber"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/PedomanMediaSiber.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PedomanMediaSiber.png
     close browser
 
 Case 39 click menu contact us
@@ -844,14 +844,14 @@ Case 39 click menu contact us
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
     sleep    10s
     click link    xpath=//a[@href="https://www.idntimes.com/hubungi-kami"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/ContactUs.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/ContactUs.png
     close browser
 
 Case 40 signup fail with all field empty
@@ -862,7 +862,7 @@ Case 40 signup fail with all field empty
     sleep    10s
     click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupError1.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/SignupError1.png
     close browser
 
 Case 41 signup success
@@ -870,7 +870,7 @@ Case 41 signup success
     maximize browser window
     sleep    10s
     click element    xpath=//a[@href="#signup"]
-    input text    name:nama    Gallan
+    input text    name:nama    Irfan
     sleep    10s
     input text    xpath=(//input[@name='email'])[2]    ${email_registrasi}
     input text    xpath=(//input[@name='password'])[2]    ${password_registrasi}
@@ -878,7 +878,7 @@ Case 41 signup success
     sleep    10s
     click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/SignupSuccess.png
     close browser
 
 Case 42 signup fail with email is registered
@@ -886,7 +886,7 @@ Case 42 signup fail with email is registered
     maximize browser window
     sleep    10s
     click element    xpath=//a[@href="#signup"]
-    input text    name:nama    Gallan
+    input text    name:nama    Irfan
     sleep    10s
     input text    xpath=(//input[@name='email'])[2]    ${email_registrasi}
     input text    xpath=(//input[@name='password'])[2]    ${password_registrasi}
@@ -894,5 +894,5 @@ Case 42 signup fail with email is registered
     sleep    10s
     click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupError2.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/SignupError2.png
     close browser
