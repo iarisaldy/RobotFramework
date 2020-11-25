@@ -16,7 +16,7 @@ Case 1 signup fail with all field empty
     sleep    10s
     click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/SignupError1.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupError1.png
     close browser
 
 Case 2 signup success
@@ -32,7 +32,7 @@ Case 2 signup success
     sleep    10s
     click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/SignupSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupSuccess.png
     close browser
 
 Case 3 signup fail with email is registered
@@ -48,5 +48,5 @@ Case 3 signup fail with email is registered
     sleep    10s
     click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /Users/iaris/Documents/idn_media/screenshot/SignupError2.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupError2.png
     close browser
