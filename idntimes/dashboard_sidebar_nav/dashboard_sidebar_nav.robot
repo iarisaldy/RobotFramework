@@ -18,7 +18,7 @@ Case 1 click menu view profile
     sleep    10s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
-    click element    xpath=//a[@class="btn btn-default btn-xs btn-profile"][@href="https://www.idntimes.com/gallan-widyanto"]
+    click element    xpath=//a[@class="btn btn-default btn-xs btn-profile"]
     sleep    10s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/ViewProfile.png
     close browser

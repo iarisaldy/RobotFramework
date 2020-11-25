@@ -431,3 +431,348 @@ Case 9 Pindah-pindah section create artikel
 
 Case 10 Edit Artikel to Draft
 Case 11 Edit Artikel to Draft and save to Editorial
+
+Case 12 click menu view profile
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="btn btn-default btn-xs btn-profile"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/ViewProfile.png
+    close browser
+
+Case 13 click menu redeem
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="request-redeem-nav btn btn-success"][@href="https://community.idntimes.com/dashboard/request-redeem"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Redeem.png
+    close browser
+
+Case 14 click menu badge & reward
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="btn btn-border-red"][@href="https://community.idntimes.com/gallan-widyanto/badges"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/BadgeReward.png
+    close browser
+
+Case 15 click menu how to & FAQ
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class=""][@href="https://community.idntimes.com/dashboard/how-to"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/FAQ.png
+    close browser
+
+Case 16 click menu panduan menulis
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="community-guide-nav "][@href="https://community.idntimes.com/dashboard/community-guide"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PanduanMenulis.png
+    close browser
+
+Case 17 click menu assignment
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class=""][@href="https://community.idntimes.com/dashboard/assignment-list"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Assignment.png
+    close browser
+
+Case 18 click menu publish
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="publish-nav "][@href="https://community.idntimes.com/dashboard/article/publish/1"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Publish.png
+    close browser
+
+Case 19 click menu draft
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="draft-nav "][@href="https://community.idntimes.com/dashboard/article/draft/1"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Draft.png
+    close browser
+
+Case 20 click menu pending
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="pending-nav "][@href="https://community.idntimes.com/dashboard/article/pending/1"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Pending.png
+    close browser
+
+Case 21 click menu rejected
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="rejected-nav "][@href="https://community.idntimes.com/dashboard/article/rejected/1"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Rejected.png
+    close browser
+
+Case 22 click menu revision
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="revision-nav "][@href="https://community.idntimes.com/dashboard/article/revision/1"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Revision.png
+    close browser
+
+Case 23 click menu redeem history
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click element    xpath=//a[@class="redeem-history-nav "][@href="https://community.idntimes.com/dashboard/redeem-history/all/1"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/RedeemHistory.png
+    close browser
+
+Case 24 click menu hidup bersama corona
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/tag/covid-19"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/HidupBersamaCorona.png
+    close browser
+
+Case 25 click menu tanya jawab
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://tanyajawab.idntimes.com"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/TanyaJawab.png
+    close browser
+
+Case 26 click menu news
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/news"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/News.png
+    close browser
+
+Case 27 click menu business
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/business"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Business.png
+    close browser
+
+Case 28 click menu sport
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/sport"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Sport.png
+    close browser
+
+Case 29 click menu tech
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/tech"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Tech.png
+    close browser
+
+Case 30 click menu hype
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/hype"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Hype.png
+    close browser
+
+Case 31 click menu life
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/life"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Life.png
+    close browser
+
+Case 32 click menu health
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/health"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Health.png
+    close browser
+
+Case 33 click menu travel
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://www.idntimes.com/travel"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Travel.png
+    close browser
+
+Case 34 click menu community
+    open browser    ${url}    ${browser}
+    maximize browser window
+    input text    name:email    ${email}
+    input text    name:password    ${password}
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Login_Normal.png
+    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/LoginSuccess.png
+    sleep    10s
+    click link    xpath=//a[@href="https://community.idntimes.com"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/Community.png
+    close browser
