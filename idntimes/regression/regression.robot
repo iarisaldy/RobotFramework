@@ -6,6 +6,8 @@ ${url}    https://community.idntimes.com/
 ${browser}    chrome
 ${email}    alam.baka.99@yahoo.com
 ${password}    okeokeoke
+${email_registrasi}    iarisaldy@gmail.com
+${password_registrasi}    okeokeoke
 
 *** Test Cases ***
 
@@ -850,4 +852,47 @@ Case 39 click menu contact us
     click link    xpath=//a[@href="https://www.idntimes.com/hubungi-kami"]
     sleep    10s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_footer_nav/screenshot/ContactUs.png
+    close browser
+
+Case 40 signup fail with all field empty
+    open browser    ${url}    ${browser}
+    maximize browser window
+    sleep    10s
+    click element    xpath=//a[@href="#signup"]
+    sleep    10s
+    click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupError1.png
+    close browser
+
+Case 41 signup success
+    open browser    ${url}    ${browser}
+    maximize browser window
+    sleep    10s
+    click element    xpath=//a[@href="#signup"]
+    input text    name:nama    Gallan
+    sleep    10s
+    input text    xpath=(//input[@name='email'])[2]    ${email_registrasi}
+    input text    xpath=(//input[@name='password'])[2]    ${password_registrasi}
+    input text    name:passwordConf   ${password}
+    sleep    10s
+    click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupSuccess.png
+    close browser
+
+Case 42 signup fail with email is registered
+    open browser    ${url}    ${browser}
+    maximize browser window
+    sleep    10s
+    click element    xpath=//a[@href="#signup"]
+    input text    name:nama    Gallan
+    sleep    10s
+    input text    xpath=(//input[@name='email'])[2]    ${email_registrasi}
+    input text    xpath=(//input[@name='password'])[2]    ${password_registrasi}
+    input text    name:passwordConf    ${password_registrasi}
+    sleep    10s
+    click button    Sign Up    # xpath=//button[@class="btn btn-submit"]
+    sleep    10s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/signup/screenshot/SignupError2.png
     close browser
