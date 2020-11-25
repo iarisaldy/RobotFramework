@@ -13,7 +13,7 @@ Case 1 click menu view profile
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
     capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
