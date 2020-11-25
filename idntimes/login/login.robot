@@ -37,3 +37,19 @@ Case 3 login success with username and password correct
     sleep    10s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/screenshot/LoginSuccess.png
     close browser
+
+Case 4 login Gmail success 
+    open browser    ${url}    ${browser}
+    maximize browser window
+    click element    xpath=//img[@alt='GOOGLE']
+    sleep    5s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/LoginGmailSuccess.png
+    close browser
+
+Case 5 login Facebook success 
+    open browser    ${url}    ${browser}
+    maximize browser window
+    click element    xpath=//img[@alt='FACEBOOK']
+    sleep    5s
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/login/screenshot/LoginFacebookSuccess.png
+    close browser
