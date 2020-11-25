@@ -16,11 +16,11 @@ Case 1 click menu view profile
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="btn btn-default btn-xs btn-profile"][@href="https://www.idntimes.com/gallan-widyanto"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/ViewProfile.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/ViewProfile.png
     close browser
 
 Case 2 click menu redeem
@@ -28,14 +28,14 @@ Case 2 click menu redeem
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="request-redeem-nav btn btn-success"][@href="https://community.idntimes.com/dashboard/request-redeem"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Redeem.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Redeem.png
     close browser
 
 Case 3 click menu badge & reward
@@ -43,14 +43,14 @@ Case 3 click menu badge & reward
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="btn btn-border-red"][@href="https://community.idntimes.com/gallan-widyanto/badges"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/BadgeReward.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/BadgeReward.png
     close browser
 
 Case 4 click menu how to & FAQ
@@ -58,14 +58,14 @@ Case 4 click menu how to & FAQ
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class=""][@href="https://community.idntimes.com/dashboard/how-to"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/FAQ.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/FAQ.png
     close browser
 
 Case 5 click menu panduan menulis
@@ -73,14 +73,14 @@ Case 5 click menu panduan menulis
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="community-guide-nav "][@href="https://community.idntimes.com/dashboard/community-guide"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/PanduanMenulis.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/PanduanMenulis.png
     close browser
 
 Case 6 click menu assignment
@@ -88,14 +88,14 @@ Case 6 click menu assignment
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class=""][@href="https://community.idntimes.com/dashboard/assignment-list"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Assignment.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Assignment.png
     close browser
 
 Case 7 click menu publish
@@ -103,14 +103,14 @@ Case 7 click menu publish
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="publish-nav "][@href="https://community.idntimes.com/dashboard/article/publish/1"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Publish.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Publish.png
     close browser
 
 Case 8 click menu draft
@@ -118,14 +118,14 @@ Case 8 click menu draft
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="draft-nav "][@href="https://community.idntimes.com/dashboard/article/draft/1"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Draft.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Draft.png
     close browser
 
 Case 9 click menu pending
@@ -133,14 +133,14 @@ Case 9 click menu pending
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="pending-nav "][@href="https://community.idntimes.com/dashboard/article/pending/1"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Pending.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Pending.png
     close browser
 
 Case 10 click menu rejected
@@ -148,14 +148,14 @@ Case 10 click menu rejected
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="rejected-nav "][@href="https://community.idntimes.com/dashboard/article/rejected/1"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Rejected.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Rejected.png
     close browser
 
 Case 11 click menu revision
@@ -163,14 +163,14 @@ Case 11 click menu revision
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="revision-nav "][@href="https://community.idntimes.com/dashboard/article/revision/1"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Revision.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Revision.png
     close browser
 
 Case 12 click menu redeem history
@@ -178,12 +178,12 @@ Case 12 click menu redeem history
     maximize browser window
     input text    name:email    ${email}
     input text    name:password    ${password}
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/Login_Normal.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/Login_Normal.png
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/LoginSuccess.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/LoginSuccess.png
     sleep    10s
     click element    xpath=//a[@class="redeem-history-nav "][@href="https://community.idntimes.com/dashboard/redeem-history/all/1"]
     sleep    10s
-    capture page screenshot    /media/senju/Data Kantor/python/idn_media/screenshot/RedeemHistory.png
+    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/dashboard_sidebar_nav/screenshot/RedeemHistory.png
     close browser
