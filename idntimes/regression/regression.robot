@@ -41,13 +41,13 @@ Case 3 login Facebook success
 Case 4 Open Create artikel
     open browser    ${url}    ${browser}
     maximize browser window
+    #Login
     input text    name:email    ${email}
     input text    name:password    ${password}
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
-    sleep    10s
+    #Masuk halaman create artikel
+    wait until element is visible  xpath=//i[@class="idn-mini-icon idn-write"]
     click element    xpath=//i[@class="idn-mini-icon idn-write"]
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/OpenCreateArtikelSuccess.png
-    sleep    10s
     close browser
 
 Case 5 Create artikel to Draft
@@ -57,15 +57,14 @@ Case 5 Create artikel to Draft
     input text    name:email    ${email}
     input text    name:password    ${password}
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
-    sleep    10s
     #Masuk halaman create artikel
+    wait until element is visible  xpath=//i[@class="idn-mini-icon idn-write"]
     click element    xpath=//i[@class="idn-mini-icon idn-write"]
-    sleep    10s
     #Pilih Topic
+    wait until element is visible   xpath=//label[@class="app__tab-label___369hK"]
     click element    xpath=//label[@class="app__tab-label___369hK"]
-    sleep    5s
+    wait until element is visible   xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
     click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
-    sleep    5s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PilihTopic.png
     #Isi judul
     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1   robot
@@ -100,15 +99,14 @@ Case 6 Create artikel to draft and preview
     input text    name:email    ${email}
     input text    name:password    ${password}
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
-    sleep    10s
     #Masuk halaman create artikel
+    wait until element is visible  xpath=//i[@class="idn-mini-icon idn-write"]
     click element    xpath=//i[@class="idn-mini-icon idn-write"]
-    sleep    10s
     #Pilih Topic
+    wait until element is visible   xpath=//label[@class="app__tab-label___369hK"]
     click element    xpath=//label[@class="app__tab-label___369hK"]
-    sleep    5s
+    wait until element is visible   xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
     click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
-    sleep    5s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PilihTopic.png
     #Isi judul
     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1   robot
@@ -148,15 +146,14 @@ Case 7 Create full artikel to draft and preview
     input text    name:email    ${email}
     input text    name:password    ${password}
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
-    sleep    15s
-    #masuk halaman create artikel
+    #Masuk halaman create artikel
+    wait until element is visible  xpath=//i[@class="idn-mini-icon idn-write"]
     click element    xpath=//i[@class="idn-mini-icon idn-write"]
-    sleep    10s
     #Pilih Topic
+    wait until element is visible   xpath=//label[@class="app__tab-label___369hK"]
     click element    xpath=//label[@class="app__tab-label___369hK"]
-    sleep    5s
+    wait until element is visible   xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
     click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
-    sleep    5s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PilihTopic.png
     #Isi Judul
     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1   robot
@@ -236,15 +233,14 @@ Case 8 Create artikel to Editorial
     input text    name:email    ${email}
     input text    name:password    ${password}
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
-    sleep    15s
-    #masuk halaman create artikel
+    #Masuk halaman create artikel
+    wait until element is visible  xpath=//i[@class="idn-mini-icon idn-write"]
     click element    xpath=//i[@class="idn-mini-icon idn-write"]
-    sleep    10s
     #Pilih Topic
+    wait until element is visible   xpath=//label[@class="app__tab-label___369hK"]
     click element    xpath=//label[@class="app__tab-label___369hK"]
-    sleep    5s
+    wait until element is visible   xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
     click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
-    sleep    5s
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PilihTopic.png
     #Isi Judul
     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1   robot
