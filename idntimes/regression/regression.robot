@@ -329,110 +329,110 @@ Case 8 Create artikel to Editorial
     sleep    5s
     close browser
 
-Case 9 Pindah-pindah section create artikel
-    open browser    ${url}    ${browser}
-    maximize browser window
-    #Login
-    input text    name:email    ${email}
-    input text    name:password    ${password}
-    click button    Sign In    # xpath=//button[@class="btn btn-submit"]
-    sleep    15s
-    #masuk halaman create artikel
-    click element    xpath=//i[@class="idn-mini-icon idn-write"]
-    sleep    10s
-    #Pilih Topic
-    click element    xpath=//label[@class="app__tab-label___369hK"]
-    sleep    5s
-    click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
-    sleep    5s
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PilihTopic.png
-    #Isi Judul
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1   robot
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiJudul.png
-    sleep    5s
-    #Isi Cuplikan
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[3]/div/div/div/div/p   framework
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiCuplikan.png
-    sleep    5s
-    #Sisipkan Gambar
-    click button    Sisipkan Gambar    # xpath=//button[@class="ImageStyles__btn-open-image___2eOGp"]
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PopupSisipkanGambar.png
-    sleep    10s
-    click element    xpath=//*[@id="delete-image"]/div[1]/div/img
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/BerhasilSisipkanGambar.png
-    sleep    5s
-    #Isi Diskripsi
-    select frame    xpath=//div[@class='mce-edit-area mce-container mce-panel mce-stack-layout-item']/iframe
-    input text    xpath=//*[@id="tinymce"]/p   coba dengan senyuman
-    unselect frame
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiDiskripsi.png
-    sleep    5s
-    #Embed Facebook
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[6]/div/div/div/h2   sub judul section 1 robot
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul1.png
-    sleep    5s
-    mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/div/div[2]
-    click element    xpath=//i[@class="fab fa-facebook-f"]
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/input   https://www.facebook.com/KementerianKesehatanRI/photos/a.1021894937840606/3953434788019925/
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedFB.png
-    sleep    5s
-    click button    xpath=//button[@class="app__add-content___1JCUP"] 
-    select frame    xpath=//div[@id="mceu_35"]/iframe
-    input text    xpath=//*[@id="tinymce"]/p  ini section 1
-    unselect frame
-    sleep    5s
-    #Embed Instagram
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[9]/div/div/div/h2   sub judul section 2 robot
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul2.png
-    sleep    5s
-    mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/div/div[2]
-    click element    xpath=//i[@class="fab fa-instagram"]
-    input text    //*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/input     https://www.instagram.com/p/CHeY6l4jLkx/?utm_source=ig_web_button_share_sheet
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedIG.png
-    sleep    5s
-    click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[11]/div[1]/div/button
-    select frame    xpath=//div[@id="mceu_54"]/iframe
-    input text    xpath=//*[@id="tinymce"]/p  ini section 2
-    unselect frame
-    sleep    5s
-    #Embed Twitter
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[12]/div/div/div/h2   sub judul section 3 robot
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul3.png
-    sleep    5s
-    mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/div/div[2]
-    click element    xpath=//i[@class="fab fa-twitter"]
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/input   https://twitter.com/e100ss/status/1326491523471470593?s=20
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedTwitter.png
-    sleep    5s
-    click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[1]/div/button
-    select frame    xpath=//div[@id="mceu_73"]/iframe
-    input text    xpath=//*[@id="tinymce"]/p  ini section 3
-    unselect frame
-    sleep    5s
-    #Tambah Setion
-    click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[2]/button
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/TambahSection.png
-    sleep    10s
-    #Embed Youtube
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[15]/div/div/div/h2   sub judul section 4 robot
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul4.png
-    sleep    5s
-    mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/div/div[2]
-    click element    xpath=//i[@class="fab fa-youtube"]
-    input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/input   https://www.youtube.com/watch?v=Q9U2rBtp7qk
-    capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedYoutube.png
-    sleep    5s
-    click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[17]/div[1]/div/button 
-    select frame    xpath=//div[@id="mceu_92"]/iframe
-    input text    xpath=//*[@id="tinymce"]/p  ini section 4
-    unselect frame
-    sleep    5s
-    click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[8]/div[2]/div/button
-    click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[11]/div[2]/div/button[2]
-    click button    xpath=///*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[2]/div/button[1]
+# Case 9 Pindah-pindah section create artikel
+#     open browser    ${url}    ${browser}
+#     maximize browser window
+#     #Login
+#     input text    name:email    ${email}
+#     input text    name:password    ${password}
+#     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
+#     sleep    15s
+#     #masuk halaman create artikel
+#     click element    xpath=//i[@class="idn-mini-icon idn-write"]
+#     sleep    10s
+#     #Pilih Topic
+#     click element    xpath=//label[@class="app__tab-label___369hK"]
+#     sleep    5s
+#     click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[1]/div/ul/li[1]/p
+#     sleep    5s
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PilihTopic.png
+#     #Isi Judul
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[2]/div/div/div/div/h1   robot
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiJudul.png
+#     sleep    5s
+#     #Isi Cuplikan
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[3]/div/div/div/div/p   framework
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiCuplikan.png
+#     sleep    5s
+#     #Sisipkan Gambar
+#     click button    Sisipkan Gambar    # xpath=//button[@class="ImageStyles__btn-open-image___2eOGp"]
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/PopupSisipkanGambar.png
+#     sleep    10s
+#     click element    xpath=//*[@id="delete-image"]/div[1]/div/img
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/BerhasilSisipkanGambar.png
+#     sleep    5s
+#     #Isi Diskripsi
+#     select frame    xpath=//div[@class='mce-edit-area mce-container mce-panel mce-stack-layout-item']/iframe
+#     input text    xpath=//*[@id="tinymce"]/p   coba dengan senyuman
+#     unselect frame
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiDiskripsi.png
+#     sleep    5s
+#     #Embed Facebook
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[6]/div/div/div/h2   sub judul section 1 robot
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul1.png
+#     sleep    5s
+#     mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/div/div[2]
+#     click element    xpath=//i[@class="fab fa-facebook-f"]
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[7]/div/div/input   https://www.facebook.com/KementerianKesehatanRI/photos/a.1021894937840606/3953434788019925/
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedFB.png
+#     sleep    5s
+#     click button    xpath=//button[@class="app__add-content___1JCUP"] 
+#     select frame    xpath=//div[@id="mceu_35"]/iframe
+#     input text    xpath=//*[@id="tinymce"]/p  ini section 1
+#     unselect frame
+#     sleep    5s
+#     #Embed Instagram
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[9]/div/div/div/h2   sub judul section 2 robot
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul2.png
+#     sleep    5s
+#     mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/div/div[2]
+#     click element    xpath=//i[@class="fab fa-instagram"]
+#     input text    //*[@id="idn-editor"]/div/div/div[2]/div[3]/div[10]/div/div/input     https://www.instagram.com/p/CHeY6l4jLkx/?utm_source=ig_web_button_share_sheet
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedIG.png
+#     sleep    5s
+#     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[11]/div[1]/div/button
+#     select frame    xpath=//div[@id="mceu_54"]/iframe
+#     input text    xpath=//*[@id="tinymce"]/p  ini section 2
+#     unselect frame
+#     sleep    5s
+#     #Embed Twitter
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[12]/div/div/div/h2   sub judul section 3 robot
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul3.png
+#     sleep    5s
+#     mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/div/div[2]
+#     click element    xpath=//i[@class="fab fa-twitter"]
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[13]/div/div/input   https://twitter.com/e100ss/status/1326491523471470593?s=20
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedTwitter.png
+#     sleep    5s
+#     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[1]/div/button
+#     select frame    xpath=//div[@id="mceu_73"]/iframe
+#     input text    xpath=//*[@id="tinymce"]/p  ini section 3
+#     unselect frame
+#     sleep    5s
+#     #Tambah Setion
+#     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[2]/button
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/TambahSection.png
+#     sleep    10s
+#     #Embed Youtube
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[15]/div/div/div/h2   sub judul section 4 robot
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiSubjudul4.png
+#     sleep    5s
+#     mouse over  xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/div/div[2]
+#     click element    xpath=//i[@class="fab fa-youtube"]
+#     input text    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[16]/div/div/input   https://www.youtube.com/watch?v=Q9U2rBtp7qk
+#     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/regression/screenshot/IsiEmbedYoutube.png
+#     sleep    5s
+#     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[17]/div[1]/div/button 
+#     select frame    xpath=//div[@id="mceu_92"]/iframe
+#     input text    xpath=//*[@id="tinymce"]/p  ini section 4
+#     unselect frame
+#     sleep    5s
+#     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[8]/div[2]/div/button
+#     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[11]/div[2]/div/button[2]
+#     click button    xpath=///*[@id="idn-editor"]/div/div/div[2]/div[3]/div[14]/div[2]/div/button[1]
 
-Case 10 Edit Artikel to Draft
-Case 11 Edit Artikel to Draft and save to Editorial
+# Case 10 Edit Artikel to Draft
+# Case 11 Edit Artikel to Draft and save to Editorial
 
 Case 12 click menu view profile
     open browser    ${url}    ${browser}
