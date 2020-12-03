@@ -1,5 +1,5 @@
 *** Settings ***
-Library  SeleniumLibrary
+Library  Selenium2Library
 
 *** Variables ***
 ${url}    https://community.idntimes.com/
@@ -306,6 +306,7 @@ Case 6 Pindah-pindah section create artikel
     input text    name:password    ${password}
     click button    Sign In    # xpath=//button[@class="btn btn-submit"]
     #masuk halaman create artikel
+    sleep    10s
     wait until element is visible   xpath=//i[@class="idn-mini-icon idn-write"]
     click element    xpath=//i[@class="idn-mini-icon idn-write"]
     #Pilih Topic
@@ -389,8 +390,10 @@ Case 6 Pindah-pindah section create artikel
     capture page screenshot    /Users/iaris/Documents/RobotFramework/idntimes/artikel/screenshot/IsiEmbedYoutube.png
     sleep    5s
     click button    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[17]/div[1]/div/button 
-    select frame    xpath=//div[@id="mceu_92"]/iframe
+    select frame    xpath=//div[@id="mceu_93"]/iframe
     input text    xpath=//*[@id="tinymce"]/p  ini section 4
     unselect frame
-    sleep    5s
+    #wait until element is visible   xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[17]/div[2]/div/button/i
     click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[17]/div[2]/div/button/i
+    #wait until element is visible   xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[8]/div[2]/div/button/i
+    click element    xpath=//*[@id="idn-editor"]/div/div/div[2]/div[3]/div[8]/div[2]/div/button
